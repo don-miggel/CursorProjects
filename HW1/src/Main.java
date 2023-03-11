@@ -64,4 +64,17 @@ public class Main {
         System.out.println("double multiplication: " + (double1 * double2));
         System.out.println("double division: " + (double1 / double2));
     }
+
+    public int getNum(){
+        int someVal = 0;
+        {
+            int newVal = 10;
+            if (newVal > 10){
+                {
+                    int someVal = 10;
+                }
+            }
+        }
+        return someVal;
+    }
 }

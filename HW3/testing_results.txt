@@ -1,0 +1,151 @@
+
+//Bank bank1 = new Bank("Mono", "MNB");
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 0
+
+//System.out.println(bank1);
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}
+
+//Account credit1 = new CreditAccount("123", 11000.0, mykola, bank1);
+//System.out.println(credit1);
+CreditAccount{accountNumber='123', accountBalance=100.0, user=BankClient{id=456, name='Mykola', age=24, email='mykola@ukr.net', phone='050 111 22 33', password='000', address='Lviv, Rynok Square'}, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}, accountLimit=100.0}
+
+//CreditAccount.getWithdrawCommission();
+The current withdraw commission is 10.0 percent
+
+//((CreditAccount) credit1).withdraw(75.6);
+Credit account has 10.0% commission. You will get 68.04
+
+//System.out.println(credit1);
+CreditAccount{accountNumber='123', accountBalance=24.4, user=BankClient{id=456, name='Mykola', age=24, email='mykola@ukr.net', phone='050 111 22 33', password='000', address='Lviv, Rynok Square'}, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}, accountLimit=100.0}
+
+((CreditAccount) credit1).withdraw(20.6);
+Credit account has 10.0% commission. You will get 18.54
+
+//System.out.println(credit1);
+CreditAccount{accountNumber='123', accountBalance=3.8, user=BankClient{id=456, name='Mykola', age=24, email='mykola@ukr.net', phone='050 111 22 33', password='000', address='Lviv, Rynok Square'}, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}, accountLimit=100.0}
+
+//Account credit2 = new CreditAccount();
+//credit2.setBank(bank1);
+//credit2.setUser(ivan);
+//credit2.setAccountBalance(8900.0);
+//credit2.setAccountNumber("369");
+//System.out.println(credit2);
+CreditAccount{accountNumber='369', accountBalance=8900.0, user=null, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}, accountLimit=0.0}
+
+//CreditAccount.setWithdrawCommission(15.0);
+
+// ((CreditAccount) credit2).withdraw(5217.69);
+Credit account has 15.0% commission. You will get 4435.04
+
+//System.out.println("The balance of credit2 is "+ credit2.getAccountBalance());
+The balance of credit2 is 3682.31
+
+//Account debit1 = new DebitAccount("159", 3769.22, mykola, bank1);
+//System.out.println(debit1);
+DebitAccount{accountNumber='159', accountBalance=3769.22, user=BankClient{id=456, name='Mykola', age=24, email='mykola@ukr.net', phone='050 111 22 33', password='000', address='Lviv, Rynok Square'}, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}}
+
+//((DebitAccount) debit1).withdraw(2157.33);
+You will get money without any commission: 2157.33
+
+//System.out.println("The balance of debit1 is "+ debit1.getAccountBalance());
+The balance of debit1 is 1611.89
+
+//((DebitAccount) debit1).withdraw(3157.33);
+You request to withdraw amount of money 3157.33, that exceeds your balance 1611.89
+
+//System.out.println("The balance of debit1 is "+ debit1.getAccountBalance());
+The balance of debit1 is 1611.89
+
+//Account debit2 = new DebitAccount();
+//debit2.setAccountNumber("741");
+//debit2.setAccountBalance(5423.67);
+//debit2.setUser(ivan);
+// debit2.setBank(bank1);
+// System.out.println(debit2);
+DebitAccount{accountNumber='741', accountBalance=5423.67, user=BankClient{id=756, name='Ivan', age=28, email='ivan@ukr.net', phone='050 222 33 45', password='111', address='Kyiv, Khreshatik'}, bank=Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}}
+
+//((DebitAccount) debit2).withdraw(1532.78);
+You will get money without any commission: 1532.78
+
+//System.out.println("The balance of debit1 is "+ debit2.getAccountBalance());
+The balance of debit1 is 3890.89
+
+//((DebitAccount) debit2).withdraw(3157.33);
+You will get money without any commission: 3157.33
+
+//System.out.println("The balance of debit1 is "+ debit2.getAccountBalance());
+The balance of debit1 is 733.56
+
+//((DebitAccount) debit2).withdraw(3157.33);
+You request to withdraw amount of money 3157.33, that exceeds your balance 733.56
+
+//System.out.println("The balance of debit1 is "+ debit2.getAccountBalance());
+The balance of debit1 is 733.56
+
+//System.out.println(bank1);
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}
+
+//bank1.addAccount(credit1);
+Account 123 was added!
+
+//System.out.println(bank1);
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=4003.8}
+
+//bank1.addAccount(credit2);
+Account 369 was added!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=7686.11}
+
+//bank1.addAccount(debit1);
+Account 159 was added!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=9298.0}
+
+//bank1.addAccount(debit2);
+Account 741 was added!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=10031.56}
+
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 4
+
+//bank1.removeAccount(debit2);
+Account 741 was removed!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=9298.0}
+
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 3
+
+//bank1.removeAccount(debit1);
+Account 159 was removed!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=7686.11}
+
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 2
+
+//bank1.removeAccount(credit2);
+Account 369 was removed!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=4003.8}
+
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 1
+
+//bank1.removeAccount(credit1);
+Account 123 was removed!
+
+//System.out.println(bank1)
+Bank{bankCode='MNB', bankName='Mono', moneyAmount=4000.0}
+
+//System.out.println(Bank.getAmountOfAccounts());
+Total amount of clients of all banks is 0
+
