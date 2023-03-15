@@ -1,0 +1,65 @@
+-------CIRCLE DEMO---------------
+Circle area: 76.96902001294993
+
+Circle perimeter: 21.991148575128552
+
+Circle{radius=3.5, center=[Vertex{x=5.0, y=4.0}], area=76.96902001294993, volume =21.991148575128552}
+
+-------RECTANGLE DEMO---------------
+Rectangle area: 86.1
+
+Rectangle perimeter: 172.2
+
+Rectangle{width=8.2, height=10.5, starting point=[Vertex{x=0.0, y=2.0}], area=86.1, volume =172.2}
+
+-------TRIANGLES DEMO---------------
+Triangle{points=[Vertex{x=3.0, y=2.0}, Vertex{x=1.0, y=0.0}, Vertex{x=0.0, y=-1.0}], area=1.7362538756394037E-7, volume =8.485281374238571}
+
+Triangle1 perimeter: 8.485281374238571
+
+Triangle1 area: 1.7362538756394037E-7
+
+Triangle{points=[Vertex{x=2.0, y=2.0}, Vertex{x=4.0, y=6.0}, Vertex{x=5.0, y=2.0}], area=6.7438579073367535, volume =11.595241580617241}
+
+Triangle2 perimeter: 11.595241580617241
+
+Triangle2 area: 6.7438579073367535
+-------SPHERE DEMO---------------
+Sphere{radius=5.5, sphere center=[Vertex3D{x=1.0, y=3.0, z=5.0}], area=380.1327110843649, volume =696.9099703213358}
+
+Sphere area: 380.1327110843649
+
+Sphere volume: 696.9099703213358
+-------CUBOID DEMO---------------
+Cuboid{width=4.0, height=5.0, depth=6.0, point=[Vertex3D{x=1.0, y=2.0, z=-3.0}], area=148.0, volume =120.0}
+
+Cuboid area: 148.0
+
+Cuboid volume: 120.0
+-------SQUARE PYRAMID DEMO---------------
+SquarePyramid{width=22.5, height=7.8, base center=[Vertex3D{x=5.0, y=3.0, z=-2.0}], area=616.0276475126745, volume =1316.25}
+
+Square pyramid area: 616.0276475126745
+
+Square pyramid volume: : 1316.25
+
+my.geometry.shapes.SquarePyramid:  
+SquarePyramid{width=22.5, height=7.8, base center=[Vertex3D{x=5.0, y=3.0, z=-2.0}], area=616.0276475126745, volume =1316.25}
+
+my.geometry.shapes.Circle:  
+Circle{radius=3.5, center=[Vertex{x=5.0, y=4.0}], area=76.96902001294993, volume =21.991148575128552}
+
+my.geometry.shapes.Triangle:  
+Triangle{points=[Vertex{x=3.0, y=2.0}, Vertex{x=1.0, y=0.0}, Vertex{x=0.0, y=-1.0}], area=1.7362538756394037E-7, volume =8.485281374238571}
+
+my.geometry.shapes.Sphere:  
+Sphere{radius=5.5, sphere center=[Vertex3D{x=1.0, y=3.0, z=5.0}], area=380.1327110843649, volume =696.9099703213358}
+
+my.geometry.shapes.Triangle:  
+Triangle{points=[Vertex{x=2.0, y=2.0}, Vertex{x=4.0, y=6.0}, Vertex{x=5.0, y=2.0}], area=6.7438579073367535, volume =11.595241580617241}
+
+my.geometry.shapes.Rectangle:  
+Rectangle{width=8.2, height=10.5, starting point=[Vertex{x=0.0, y=2.0}], area=86.1, volume =172.2}
+
+my.geometry.shapes.Cuboid:  
+Cuboid{width=4.0, height=5.0, depth=6.0, point=[Vertex3D{x=1.0, y=2.0, z=-3.0}], area=148.0, volume =120.0}
