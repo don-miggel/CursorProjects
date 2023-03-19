@@ -1,0 +1,51 @@
+
+Tuna can ( less than or equal to 15 days expiration) price is: 0.9
+Salmon can  price is: 5.2
+Computer{ name='Apple mac mini M2', price=699.0, quantity=1005, ageRestriction=TEENAGER, guaranteeExpDate=2025-03-19}
+Apple mac mini M2 price is 664.05 for products more 1000 units (95% of price)
+Customer{name='Dan', age=19, balance=20.25}
+Apple mac mini M2 price is 664.05
+Refrigerator LG price is 499.0
+FoodProduct{ name='Cuban cigar', price=20.26, quantity=19, ageRestriction=ADULT, expDate=2023-04-19}
+---------------------------------------------------------------
+-------------Check NotEnoughMoneyException-------------------
+Dan balance before purchase: 20.25
+Cigar qty before purchase: 19
+my.shop.exceptions.NotEnoughMoneyException: You have current balance: 20.25, which is not enough to buy a Cuban cigar, which costs: 20.26
+Dan balance after purchase: 20.25
+Cigar qty after purchase: 19
+---------------------------------------------------------------
+------Now check buy function when a client has enough money and is eligible to buy such a product-----------
+Dan's balance before purchase: 20.25
+Cuban cigar qty before purchase: 19
+Dan balance after purchase: 1.09
+Cigar qty after purchase: 18
+---------------------------------------------------------------
+----------------Check BuyingNotEligibleException---------------
+Dan's balance before purchase: 100.25
+Hennessy cognac qty before purchase: 19
+my.shop.exceptions.BuyingNotEligibleException: Dan is not eligible to buy a Hennessy cognac.You are younger than 18 years! 
+Dan's balance after purchase: 100.25
+Hennessy cognac qty after purchase: 19
+---------------------------------------------------------------
+----------------Check OutOfStockException--------------------
+Dan's balance before purchase: 100.25
+Refrigerator LG qty before purchase: 0
+my.shop.exceptions.OutOfStockException: Refrigerator LG is Out of stock
+Dan's balance after purchase: 100.25
+Refrigerator LG qty after purchase: 0
+---------------------------------------------------------------
+-----------Check ProductExpiredException------------------
+Dan's balance before purchase: 100.25
+Tuna can qty before purchase: 31
+my.shop.exceptions.ProductExpiredException: Tuna can has expiration date: 2023-03-15, which is less than current date
+Dan's balance after purchase: 100.25
+Tuna can qty after purchase: 31
+---------------------------------------------------------------
+---------Expired products-------------
+FoodProduct{ name='Tuna can', price=3.0, quantity=31, ageRestriction=NONE, expDate=2023-03-15}
+FoodProduct{ name='Beans can', price=2.3, quantity=2, ageRestriction=NONE, expDate=2023-03-17}
+---------Products which can be bought by adults-------------
+FoodProduct{ name='Cuban cigar', price=19.16, quantity=18, ageRestriction=ADULT, expDate=2023-04-19}
+FoodProduct{ name='Hennessy cognac', price=71.23, quantity=19, ageRestriction=ADULT, expDate=2023-07-31}
+Appliance{ name='Refrigerator LG', price=499.0, quantity=0, ageRestriction=ADULT, guaranteeExpDate=2023-09-19}
