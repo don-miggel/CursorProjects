@@ -1,0 +1,3 @@
+User{firstName='Joe', lastName='Doe', email='joe@doe.com', age=35}
+User{firstName='Ivan', lastName='Petrenko', email='ivan@petrenko.ua', age=28}
+User{firstName='David', lastName='Davidson', email='dave@davidson', age=42}
